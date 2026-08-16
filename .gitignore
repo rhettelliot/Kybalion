@@ -25,3 +25,5 @@ yarn-error.log*
 
 # Test artifacts
 .playwright-mcp/
+.vercel
+graphify-out/
