@@ -22,8 +22,8 @@ function ScrollToTop() {
 
 function PageLoading() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-32 flex items-center gap-3 mono-data text-white/40">
-      <div className="w-1.5 h-1.5 bg-positive-green blink" /> LOADING_MODULE…
+    <div className="max-w-7xl mx-auto px-6 py-32 flex items-center gap-3 mono-data text-ink-3">
+      <div className="w-1.5 h-1.5 bg-signal blink" /> LOADING_MODULE…
     </div>
   );
 }
@@ -39,21 +39,21 @@ class RouteErrorBoundary extends React.Component<{ children: React.ReactNode }, 
     if (!this.state.failed) return this.props.children;
     return (
       <div className="max-w-3xl mx-auto px-6 py-32 text-center">
-        <div className="mono-data text-safety-orange mb-3">MODULE_FAULT // LOAD_FAILED</div>
-        <p className="text-white/50 max-w-md mx-auto mb-10">
+        <div className="mono-data text-signal mb-3">MODULE_FAULT // LOAD_FAILED</div>
+        <p className="text-ink-3 max-w-md mx-auto mb-10">
           A module failed to load. Check your connection — or a new build may have shipped underneath you.
         </p>
         <div className="flex justify-center gap-3">
           <button
             onClick={() => window.location.reload()}
-            className="px-8 py-4 bg-signal-white text-black font-bold uppercase tracking-widest text-sm hover:bg-positive-green transition-colors"
+            className="px-8 py-4 bg-ink text-canvas font-bold uppercase tracking-widest text-sm hover:bg-signal transition-colors"
           >
             Reload
           </button>
           <Link
             to="/"
             onClick={() => this.setState({ failed: false })}
-            className="px-8 py-4 border border-white/20 text-signal-white font-bold uppercase tracking-widest text-sm hover:bg-white/5 transition-colors"
+            className="px-8 py-4 border border-border-hi text-ink font-bold uppercase tracking-widest text-sm hover:bg-surface-hi transition-colors"
           >
             Return to Base
           </Link>

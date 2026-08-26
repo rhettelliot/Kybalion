@@ -26,9 +26,9 @@ function readScores(): Scores {
 }
 
 function colorFor(v: number): string {
-  if (v < 40) return '#FF4D00';
-  if (v < 70) return '#007AFF';
-  return '#00D455';
+  if (v < 40) return '#FF5500';
+  if (v < 70) return '#B33600';
+  return '#FFE566';
 }
 
 function bandFor(v: number): string {
@@ -53,14 +53,14 @@ export default function Audit() {
     <div className="max-w-7xl mx-auto px-6 py-16">
       <SectionHeader
         num="AUD"
-        icon={<Gauge className="text-signal-blue w-7 h-7" />}
+        icon={<Gauge className="text-signal w-7 h-7" />}
         title="Installation Audit"
         sub="Rate the integrity of each installed filter: does incoming data automatically render through it, or do you still have to think about it? Scores persist locally — nothing leaves your device."
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Sliders */}
-        <div className="lg:col-span-7 border border-white/10 divide-y divide-white/10">
+        <div className="lg:col-span-7 border border-border divide-y divide-border">
           {FILTERS.map((c) => {
             const val = scores[c.id];
             const color = colorFor(val);
@@ -68,12 +68,12 @@ export default function Audit() {
               <div key={c.id} className="p-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <div>
-                    <span className="mono-data text-white/30 mr-3">{String(c.number).padStart(2, '0')}</span>
-                    <span className="text-signal-white font-bold uppercase text-sm display-tight">{c.title}</span>
+                    <span className="mono-data text-ink-3 mr-3">{String(c.number).padStart(2, '0')}</span>
+                    <span className="text-ink font-bold uppercase text-sm display-tight">{c.title}</span>
                   </div>
                   <span className="font-mono text-lg" style={{ color }}>{val}</span>
                 </div>
-                <div className="mono-data text-white/30 mb-4">THREAT: {c.threatVector.toUpperCase()}</div>
+                <div className="mono-data text-ink-3 mb-4">THREAT: {c.threatVector.toUpperCase()}</div>
                 <input
                   type="range"
                   min={0}
@@ -81,13 +81,13 @@ export default function Audit() {
                   value={val}
                   onChange={(e) => setScores({ ...scores, [c.id]: Number(e.target.value) })}
                   aria-label={`${c.title} installation integrity`}
-                  className="slider-tactical w-full h-1 appearance-none cursor-pointer bg-white/10"
+                  className="slider-tactical w-full h-1 appearance-none cursor-pointer bg-ink-ghost"
                   style={{
                     '--thumb': color,
                     background: `linear-gradient(to right, ${color} 0%, ${color} ${val}%, rgba(255,255,255,0.1) ${val}%, rgba(255,255,255,0.1) 100%)`,
                   } as React.CSSProperties}
                 />
-                <div className="flex justify-between mono-data text-white/30 mt-1">
+                <div className="flex justify-between mono-data text-ink-3 mt-1">
                   <span>REACTIVE</span>
                   <span>INSTALLED</span>
                 </div>
@@ -98,47 +98,47 @@ export default function Audit() {
 
         {/* Verdict */}
         <div className="lg:col-span-5">
-          <CornerFrame className="p-8 bg-black-off/40 sticky top-20">
-            <div className="mono-data text-white/50 mb-6">RENDER_ENGINE // STATUS</div>
+          <CornerFrame className="p-8 bg-surface sticky top-20">
+            <div className="mono-data text-ink-3 mb-6">RENDER_ENGINE // STATUS</div>
 
             <div className="flex items-baseline gap-4 mb-2">
-              <span className="font-mono text-7xl text-signal-white display-tight">{mean}</span>
+              <span className="font-mono text-7xl text-ink display-tight">{mean}</span>
               <span className="mono-data" style={{ color: statusColor }}>{status}</span>
             </div>
-            <p className="text-sm text-white/50 mb-8 leading-relaxed">
+            <p className="text-sm text-ink-3 mb-8 leading-relaxed">
               {status === 'INSTALLED' && 'Data renders through the seven filters automatically. Maintain via periodic re-audit.'}
               {status === 'PARTIAL' && 'Filters respond under deliberate attention but drop out under load. Installation incomplete.'}
               {status === 'REACTIVE' && 'Factory-settings renderer dominant. You are the content of the simulation, not its administrator.'}
             </p>
 
             {/* Bars */}
-            <div className="space-y-3 pt-6 border-t border-white/10 mb-8">
+            <div className="space-y-3 pt-6 border-t border-border mb-8">
               {FILTERS.map((c) => (
                 <div key={c.id} className="flex items-center gap-3">
-                  <span className="mono-data text-white/40 w-8 shrink-0">{String(c.number).padStart(2, '0')}</span>
-                  <div className="flex-1 h-1 bg-white/10">
+                  <span className="mono-data text-ink-3 w-8 shrink-0">{String(c.number).padStart(2, '0')}</span>
+                  <div className="flex-1 h-1 bg-ink-ghost">
                     <div className="h-full" style={{ width: `${scores[c.id]}%`, background: colorFor(scores[c.id]) }} />
                   </div>
-                  <span className="mono-data text-white/40 w-8 text-right shrink-0">{scores[c.id]}</span>
+                  <span className="mono-data text-ink-3 w-8 text-right shrink-0">{scores[c.id]}</span>
                 </div>
               ))}
             </div>
 
-            <div className="mono-data text-white/50 mb-3">WEAKEST_FILTER</div>
+            <div className="mono-data text-ink-3 mb-3">WEAKEST_FILTER</div>
             <Link
               to={`/distinctions/${weakest.id}`}
-              className="group p-4 border border-safety-orange/40 hover:bg-safety-orange/10 transition-colors flex items-center justify-between mb-4"
+              className="group p-4 border border-signal/40 hover:bg-signal-dim transition-colors flex items-center justify-between mb-4"
             >
               <div>
-                <div className="mono-data text-safety-orange mb-1">DISTINCTION {String(weakest.number).padStart(2, '0')}</div>
-                <div className="text-signal-white font-bold uppercase text-sm">{weakest.title}</div>
+                <div className="mono-data text-signal mb-1">DISTINCTION {String(weakest.number).padStart(2, '0')}</div>
+                <div className="text-ink font-bold uppercase text-sm">{weakest.title}</div>
               </div>
-              <ChevronRight className="w-4 h-4 text-safety-orange group-hover:translate-x-1 transition-transform" />
+              <ChevronRight className="w-4 h-4 text-signal group-hover:translate-x-1 transition-transform" />
             </Link>
 
             <button
               onClick={() => setScores(DEFAULTS)}
-              className="w-full px-4 py-3 border border-white/15 mono-data text-white/50 hover:text-signal-white hover:border-white/40 transition-colors flex items-center justify-center gap-2"
+              className="w-full px-4 py-3 border border-border mono-data text-ink-3 hover:text-ink hover:border-border-hi transition-colors flex items-center justify-center gap-2"
             >
               <RotateCcw className="w-3 h-3" /> RESET_AUDIT
             </button>

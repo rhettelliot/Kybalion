@@ -8,8 +8,8 @@ export function LiveClock() {
   }, []);
   const utc = now.toISOString().replace('T', ' ').slice(0, 19);
   return (
-    <span className="mono-data text-white/50">
-      <span className="text-positive-green">●</span> {utc} UTC
+    <span className="mono-data text-ink-3">
+      <span className="text-signal">●</span> {utc} UTC
     </span>
   );
 }

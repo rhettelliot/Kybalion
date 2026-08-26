@@ -86,27 +86,27 @@ export default function Spectrum() {
 
   const bandIdx = Math.min(spec.bands.length - 1, Math.floor((saved.pos / 100) * spec.bands.length));
   const band = spec.bands[bandIdx];
-  // Position 0–100 mapped to orange→blue→green feel: left third orange, middle blue, right third green.
-  const color = saved.pos < 34 ? '#FF4D00' : saved.pos < 67 ? '#007AFF' : '#00D455';
+  // Position 0–100 mapped to solar accent → amber → signal: left third solar-core, middle signal, right third cream.
+  const color = saved.pos < 34 ? '#FFE566' : saved.pos < 67 ? '#FF5500' : '#F4F3EE';
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
       <SectionHeader
         num="SPC"
-        icon={<SlidersHorizontal className="text-positive-green w-7 h-7" />}
+        icon={<SlidersHorizontal className="text-signal w-7 h-7" />}
         title="Spectrum Console"
         sub="There are no opposites — only poles. Locate your current position on the spectrum, then transmute by degree. You cannot destroy a pole; you can only move the needle."
       />
 
       {/* Spectrum selector */}
-      <div className="flex flex-wrap gap-0 border border-white/10 mb-10 w-fit">
+      <div className="flex flex-wrap gap-0 border border-border mb-10 w-fit">
         {SPECTRA.map((s, i) => (
           <button
             key={s.id}
             onClick={() => setSaved({ specId: s.id, pos: 50 })}
             aria-pressed={s.id === spec.id}
-            className={`px-6 py-3 mono-data transition-colors ${i < SPECTRA.length - 1 ? 'border-r border-white/10' : ''} ${
-              s.id === spec.id ? 'bg-signal-white text-black' : 'text-white/50 hover:text-signal-white hover:bg-black-off'
+            className={`px-6 py-3 mono-data transition-colors ${i < SPECTRA.length - 1 ? 'border-r border-border' : ''} ${
+              s.id === spec.id ? 'bg-ink text-canvas' : 'text-ink-3 hover:text-ink hover:bg-surface'
             }`}
           >
             {s.name}
@@ -117,9 +117,9 @@ export default function Spectrum() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Dial */}
         <div className="lg:col-span-7">
-          <CornerFrame className="p-8 bg-black-off/40">
+          <CornerFrame className="p-8 bg-surface">
             <div className="flex justify-between items-center mb-10">
-              <div className="mono-data text-white/50">{spec.axis} // POSITION</div>
+              <div className="mono-data text-ink-3">{spec.axis} // POSITION</div>
               <div className="font-mono text-lg" style={{ color }}>{saved.pos}</div>
             </div>
 
@@ -128,7 +128,7 @@ export default function Spectrum() {
               {spec.bands.map((b, i) => (
                 <span
                   key={b.label}
-                  className={`mono-data transition-colors ${i === bandIdx ? '' : 'text-white/25'}`}
+                  className={`mono-data transition-colors ${i === bandIdx ? '' : 'text-ink-ghost'}`}
                   style={i === bandIdx ? { color } : undefined}
                 >
                   {b.label}
@@ -143,52 +143,52 @@ export default function Spectrum() {
               value={saved.pos}
               onChange={(e) => setSaved({ ...saved, pos: Number(e.target.value) })}
               aria-label={`Position on the ${spec.name} spectrum`}
-              className="slider-tactical w-full h-1 appearance-none cursor-pointer bg-white/10"
+              className="slider-tactical w-full h-1 appearance-none cursor-pointer bg-ink-ghost"
               style={{
                 '--thumb': color,
-                background: `linear-gradient(to right, #FF4D00 0%, #007AFF 50%, #00D455 100%)`,
+                background: `linear-gradient(to right, #FFE566 0%, #FF5500 50%, #F4F3EE 100%)`,
               } as React.CSSProperties}
             />
-            <div className="flex justify-between mono-data text-white/30 mt-2">
+            <div className="flex justify-between mono-data text-ink-3 mt-2">
               <span>POLE_A</span>
               <span>CENTER</span>
               <span>POLE_B</span>
             </div>
 
-            <div className="mt-10 pt-8 border-t border-white/10">
+            <div className="mt-10 pt-8 border-t border-border">
               <div className="mono-data mb-3" style={{ color }}>
                 BAND {String(bandIdx + 1).padStart(2, '0')} / {String(spec.bands.length).padStart(2, '0')} — {band.label}
               </div>
-              <p className="text-lg text-signal-white/90 leading-relaxed">{band.directive}</p>
+              <p className="text-lg text-ink leading-relaxed">{band.directive}</p>
             </div>
           </CornerFrame>
         </div>
 
         {/* Doctrine */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="border border-white/10 p-6">
-            <div className="mono-data text-signal-blue mb-3">DOCTRINE // TRANSMUTATION</div>
-            <p className="text-sm text-white/60 leading-relaxed mb-4">
+          <div className="border border-border p-6">
+            <div className="mono-data text-signal mb-3">DOCTRINE // TRANSMUTATION</div>
+            <p className="text-sm text-ink-2 leading-relaxed mb-4">
               The Reactive Human eliminates; the Sovereign Operator transmutes. Attempting to destroy a pole anchors
               you to its spectrum. Slide by degree: alter the frequency of the charge, and the state follows.
             </p>
             <Link
               to="/distinctions/d04"
-              className="mono-data text-white/50 hover:text-signal-white transition-colors flex items-center gap-2"
+              className="mono-data text-ink-3 hover:text-ink transition-colors flex items-center gap-2"
             >
               READ DISTINCTION 04 <ChevronRight className="w-3 h-3" />
             </Link>
           </div>
-          <div className="border border-white/10 p-6">
-            <div className="mono-data text-safety-orange mb-3">THREAT // POLARITY ENTRAPMENT</div>
-            <p className="text-sm text-white/60 leading-relaxed">
+          <div className="border border-border p-6">
+            <div className="mono-data text-signal mb-3">THREAT // POLARITY ENTRAPMENT</div>
+            <p className="text-sm text-ink-2 leading-relaxed">
               The harder you push against a pole, the more you anchor yourself to it. If you find yourself fighting a
               state instead of relocating along its spectrum, stop pushing. Return to the console. Move the needle.
             </p>
           </div>
-          <div className="border border-white/10 p-6">
-            <div className="mono-data text-positive-green mb-3">LINKED_SYSTEM // BTNC</div>
-            <p className="text-sm text-white/60 leading-relaxed">
+          <div className="border border-border p-6">
+            <div className="mono-data text-signal mb-3">LINKED_SYSTEM // BTNC</div>
+            <p className="text-sm text-ink-2 leading-relaxed">
               Frequency shifts are executed through the respiratory clock. For the breath cadences referenced in the
               directives, run the sister protocol: Bio-Tactical Neural Countermeasures.
             </p>

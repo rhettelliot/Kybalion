@@ -1,27 +1,56 @@
 @import "tailwindcss";
 
-@theme {
-  --color-black-main: #000000;
-  --color-black-off: #0A0A0A;
-  --color-black-elevated: #111111;
-  --color-signal-white: #FFFFFF;
-  --color-gray-700: #B0B0B0;
-  --color-gray-500: #6B6B6B;
-  --color-safety-orange: #FF4D00;
-  --color-signal-blue: #007AFF;
-  --color-positive-green: #00D455;
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
 
+@theme {
+  /* Surfaces — dark slate, not pure black */
+  --color-canvas: #0D0F12;
+  --color-surface: #15181E;
+  --color-surface-hi: #1A1E24;
+  --color-border: rgba(255,255,255,0.08);
+  --color-border-hi: rgba(255,255,255,0.14);
+  --color-cream: #F4F3EE;
+
+  /* Ink — surface-tinted, NEVER flat gray */
+  --color-ink: #F4F3EE;
+  --color-ink-2: #9EA4B0;
+  --color-ink-3: #5C6370;
+  --color-ink-ghost: rgba(244,243,238,0.20);
+
+  /* Signal — solar orange, the ONLY accent */
+  --color-signal: #FF5500;
+  --color-signal-dim: rgba(255,85,0,0.15);
+
+  /* Solar ignition gradient stops */
+  --color-solar-core: #FFE566;
+  --color-solar-blaze: #FF5500;
+  --color-solar-amber: #B33600;
+
+  /* Fonts — sans for everything, mono for data only */
   --font-sans: "Inter", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
 @layer base {
   html, body {
-    background: #000000;
+    background: #0D0F12;
   }
 
   body {
-    @apply text-gray-700 antialiased;
+    @apply bg-canvas text-ink-2 antialiased;
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";
     background-image:
@@ -32,18 +61,18 @@
   }
 
   h1, h2, h3, h4 {
-    @apply text-signal-white font-bold tracking-tight;
+    @apply text-ink font-bold tracking-tight;
   }
 
   ::selection {
-    background: #007AFF;
-    color: #FFFFFF;
+    background: #FF5500;
+    color: #0D0F12;
   }
 }
 
 @layer utilities {
   .border-sterile {
-    @apply border-white/10;
+    @apply border-border;
   }
 
   .mono-data {
@@ -53,7 +82,7 @@
   }
 
   .mono-label {
-    @apply font-mono uppercase tracking-[0.18em] text-white/40;
+    @apply font-mono uppercase tracking-[0.18em] text-ink-3;
     font-size: 0.625rem;
   }
 
@@ -110,7 +139,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(0, 122, 255, 0.06) 50%, transparent 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(255, 85, 0, 0.06) 50%, transparent 100%);
     animation: scan 6s linear infinite;
     pointer-events: none;
   }
@@ -134,7 +163,7 @@
 
   /* Tactical range slider — square thumb, per-slider color via --thumb */
   .slider-tactical {
-    --thumb: #FFFFFF;
+    --thumb: #F4F3EE;
   }
   .slider-tactical::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -142,14 +171,14 @@
     width: 14px;
     height: 14px;
     background: var(--thumb);
-    border: 1px solid #000000;
+    border: 1px solid #0D0F12;
     cursor: pointer;
   }
   .slider-tactical::-moz-range-thumb {
     width: 14px;
     height: 14px;
     background: var(--thumb);
-    border: 1px solid #000000;
+    border: 1px solid #0D0F12;
     border-radius: 0;
     cursor: pointer;
   }
@@ -169,7 +198,7 @@
 
   /* Chapter prose — typographic styling for rendered markdown */
   .chapter-prose {
-    color: rgba(255, 255, 255, 0.78);
+    color: rgba(244, 243, 238, 0.78);
     font-size: 1.0625rem;
     line-height: 1.75;
   }
@@ -178,7 +207,7 @@
   .chapter-prose h2,
   .chapter-prose h3,
   .chapter-prose h4 {
-    color: #FFFFFF;
+    color: #F4F3EE;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.02em;
@@ -192,44 +221,44 @@
     padding-bottom: 0.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  .chapter-prose h3 { font-size: 1.25rem; color: #007AFF; }
-  .chapter-prose h4 { font-size: 0.875rem; font-family: var(--font-mono); letter-spacing: 0.18em; color: rgba(255,255,255,0.5); }
+  .chapter-prose h3 { font-size: 1.25rem; color: #FF5500; }
+  .chapter-prose h4 { font-size: 0.875rem; font-family: var(--font-mono); letter-spacing: 0.18em; color: rgba(244,243,238,0.5); }
   .chapter-prose p {  }
-  .chapter-prose strong { color: #FFFFFF; font-weight: 700; }
-  .chapter-prose em { color: rgba(255, 255, 255, 0.9); font-style: italic; }
+  .chapter-prose strong { color: #F4F3EE; font-weight: 700; }
+  .chapter-prose em { color: rgba(244, 243, 238, 0.9); font-style: italic; }
   .chapter-prose a {
-    color: #007AFF;
+    color: #FF5500;
     text-decoration: underline;
-    text-decoration-color: rgba(0, 122, 255, 0.4);
+    text-decoration-color: rgba(255, 85, 0, 0.4);
     text-underline-offset: 3px;
     transition: color 0.15s;
   }
-  .chapter-prose a:hover { color: #00D455; }
+  .chapter-prose a:hover { color: #FFE566; }
   .chapter-prose ul,
   .chapter-prose ol {
     padding-left: 1.5em;
   }
   .chapter-prose ul { list-style-type: square; }
   .chapter-prose ol { list-style-type: decimal; }
-  .chapter-prose ul li::marker { color: #007AFF; }
+  .chapter-prose ul li::marker { color: #FF5500; }
   .chapter-prose ol li::marker { color: rgba(255,255,255,0.4); font-family: var(--font-mono); }
   .chapter-prose li + li { margin-top: 0.4em; }
   .chapter-prose blockquote {
-    border-left: 2px solid #FF4D00;
+    border-left: 2px solid #FF5500;
     padding: 0.25em 0 0.25em 1.25em;
     font-style: italic;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(244, 243, 238, 0.85);
   }
   .chapter-prose code {
     font-family: var(--font-mono);
     font-size: 0.875em;
     padding: 0.15em 0.4em;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(244, 243, 238, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    color: #FFFFFF;
+    color: #F4F3EE;
   }
   .chapter-prose pre {
-    background: #0A0A0A;
+    background: #15181E;
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1.25em;
     overflow-x: auto;
@@ -257,13 +286,13 @@
     text-align: left;
   }
   .chapter-prose th {
-    background: #0A0A0A;
-    color: #FFFFFF;
+    background: #15181E;
+    color: #F4F3EE;
     font-family: var(--font-mono);
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     font-weight: 700;
   }
-  .chapter-prose tr:hover td { background: rgba(255, 255, 255, 0.03); }
+  .chapter-prose tr:hover td { background: rgba(244, 243, 238, 0.03); }
 }
