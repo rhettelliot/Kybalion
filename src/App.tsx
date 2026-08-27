@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
-import { Shield, Github, Menu, X } from 'lucide-react';
+import { Shield, Menu, X } from 'lucide-react';
 import { LiveClock } from './components/LiveClock';
 
 const navLink = ({ isActive }: { isActive: boolean }) =>
@@ -88,14 +88,7 @@ export default function App() {
           <div className="flex gap-6 items-center">
             <span>BUILD: {__BUILD_DATE__}</span>
             <span>SISTER: BTNC · BTRC</span>
-            <a
-              href="https://github.com/rhettelliot/Kybalion"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-ink-2 hover:text-ink transition-colors"
-            >
-              <Github className="w-3.5 h-3.5" /> SOURCE
-            </a>
+            <span className="text-ink-2">SOURCE: BTOC</span>
             <span className="text-signal">SYS_OK</span>
           </div>
         </div>

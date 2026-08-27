@@ -73,7 +73,7 @@ Is the project failing?
 The operator's training regimen is designed to harmonize these principles:
 - **Breathwork:** Calibrates the switch between *Will to Hold* (Directive) and *Space to Be* (Receptive).
 - **Sewa:** Calibrates the switch between *Hard Boundaries* (Directive) and *Neutral Mind* (Receptive).
-- **Kybalion Tactical:** Calibrates the switch between *Intentional Rendering* (Directive) and *Precise Reading of what is* (Receptive).
+- **BTOC:** Calibrates the switch between *Intentional Rendering* (Directive) and *Precise Reading of what is* (Receptive).
 
 ### 5. FIELD DIAGNOSTICS
 

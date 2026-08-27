@@ -33,7 +33,7 @@ export default function Landing() {
                 Counter&shy;measures
               </h1>
               <p className="text-xl md:text-2xl text-ink-2 font-medium mb-10 max-w-2xl">
-                The Kybalion, stripped for parts.
+                Seven principles, stripped for parts.
                 <span className="text-ink-3"> Seven distinctions installed as a rendering engine for reality.</span>
               </p>
               <blockquote className="border-l-2 border-signal pl-6 py-1 mb-12 max-w-2xl">
@@ -145,7 +145,7 @@ export default function Landing() {
           num="02"
           icon={<Layers className="text-signal w-7 h-7" />}
           title="The Tactical Stack"
-          sub="Seven Hermetic principles, reframed as installable specifications."
+          sub="Seven operational principles, reframed as installable specifications."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border border-border">
           {FILTERS.map((c, i) => (

@@ -11,15 +11,15 @@ export interface Chapter {
   number: number;          // 0 = preamble
   slug: string;            // content filename without .md
   title: string;
-  principle: string;       // Hermetic source principle
+  principle: string;       // Architectural source principle
   operationalClass: string;
   threatVector: string;
   body?: BodyLoader;
 }
 
 const META: Omit<Chapter, 'body'>[] = [
-  { id: 'd00', number: 0, slug: '00_preface',                   title: 'Preamble',                    principle: 'Installation Directive', operationalClass: 'Ontological Bootstrap',  threatVector: 'Spiritual Sentimentality' },
-  { id: 'd01', number: 1, slug: '01_the_rendering_layer',       title: 'The Rendering Layer',         principle: 'Mentalism',              operationalClass: 'Ontological Architecture', threatVector: 'Unexamined Rendering' },
+  { id: 'd00', number: 0, slug: '00_preface',                   title: 'Preamble',                    principle: 'Installation Directive', operationalClass: 'Ontological Bootstrap',  threatVector: 'Cognitive Sentimentality' },
+  { id: 'd01', number: 1, slug: '01_the_rendering_layer',       title: 'The Rendering Layer',         principle: 'Cognitive Rendering',    operationalClass: 'Ontological Architecture', threatVector: 'Unexamined Rendering' },
   { id: 'd02', number: 2, slug: '02_fractal_architecture',      title: 'Fractal Architecture',        principle: 'Correspondence',         operationalClass: 'Structural Analysis',    threatVector: 'Scale-Blindness' },
   { id: 'd03', number: 3, slug: '03_frequency_dynamics',        title: 'Frequency Dynamics',          principle: 'Vibration',              operationalClass: 'State Engineering',      threatVector: 'Frequency Collapse' },
   { id: 'd04', number: 4, slug: '04_spectrum_operations',       title: 'Spectrum Operations',         principle: 'Polarity',               operationalClass: 'Dynamic Transmutation',  threatVector: 'Polarity Entrapment' },
