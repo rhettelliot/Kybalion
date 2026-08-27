@@ -98,7 +98,7 @@ export default function Landing() {
             </CornerFrame>
 
             <div className="mt-4 flex justify-between mono-data text-ink-3">
-              <span>SOURCE: ARCHIVAL_PROTOCOL // KYBALION</span>
+              <span>SOURCE: ARCHIVAL_PROTOCOL // the original framework</span>
               <span>BUF: OPTIMAL</span>
             </div>
           </div>

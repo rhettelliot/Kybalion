@@ -2,7 +2,7 @@
 **Objective:** Installation of the Ontological Rendering Engine.
 **Core Requirement:** Total suspension of operational sentimentality.
 
-The *Kybalion* is widely misread as a collection of esoteric mysteries or operational platitudes. This is a failure of analysis. When stripped of its early 20th-century structuralism, the text reveals itself as the oldest surviving **operating manual for reality**.
+The *the original framework* is widely misread as a collection of esoteric mysteries or operational platitudes. This is a failure of analysis. When stripped of its early 20th-century structuralism, the text reveals itself as the oldest surviving **operating manual for reality**.
 
 It describes not "truths" to be believed, but **distinctions** to be installed.
 

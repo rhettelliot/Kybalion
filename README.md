@@ -4,7 +4,7 @@
 **Classification:** Restricted / Sovereign Operator Only
 
 ## 1. PROJECT SCOPE
-This repository is a tactical reframing of seven architectural principles. It is not a spiritual guide, a self-help manual, or a philosophical exploration. It is an **Operational Manual for Reality Rendering**.
+This repository is a tactical reframing of seven architectural principles. It is not a operational guide, a self-help manual, or a philosophical exploration. It is an **Operational Manual for Reality Rendering**.
 
 The objective is to transition the operator from a state of *passive observation* (Reactive Human) to *active authorship* (Sovereign Operator) by installing seven distinct ontological filters.
 

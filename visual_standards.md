@@ -1,4 +1,4 @@
-# VISUAL STANDARDS PROTOCOL: KYBALION TACTICAL
+# VISUAL STANDARDS PROTOCOL: the original framework TACTICAL
 **Project:** Ontological Engineering & Reality Rendering
 **Scope:** Ebook, Technical Documentation, Field Guides
 **Status:** Active Directive
@@ -7,7 +7,7 @@
 **The Aesthetic:** "Ontological Command Center" / "Reactor Engineering Spec".
 **Core Tenet:** Structural Integrity. Zero Sentimentality.
 
-We are treating reality as a **renderable data-stream**. The design must reflect the clinical nature of the operation. If it looks like a "spiritual" book, it is an operational failure.
+We are treating reality as a **renderable data-stream**. The design must reflect the clinical nature of the operation. If it looks like a "operational" book, it is an operational failure.
 
 *   **Reject:** Soft curves, organic textures, gold leaf, parchment aesthetics, serif fonts.
 *   **Embrace:** High-contrast monochrome, 1px solid borders, monospaced data logs, rigid grid systems.
