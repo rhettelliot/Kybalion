@@ -4,8 +4,6 @@
 **Threat Vector:** Scale-Blindness
 
 > "As above, so below; as below, so above." 
-> — *Archival Protocol: The Kybalion*
-
 ### 1. THE SCALING LAW: FRACTAL REPLICATION
 The primary failure of the analytical mind is the belief that different scales of existence operate by different laws. The Reactive Human sees a "personal problem" as distinct from a "societal problem," and "cellular decay" as distinct from "organizational collapse."
 

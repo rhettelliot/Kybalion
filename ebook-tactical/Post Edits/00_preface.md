@@ -1,8 +1,8 @@
 # PROTOCOL 00: PREAMBLE
 **Objective:** Installation of the Ontological Rendering Engine.
-**Core Requirement:** Total suspension of spiritual sentimentality.
+**Core Requirement:** Total suspension of operational sentimentality.
 
-The *Kybalion* is widely misread as a collection of occult mysteries or spiritual platitudes. This is a failure of analysis. When stripped of its early 20th-century mysticism, the text reveals itself as the oldest surviving **operating manual for reality**.
+The *Kybalion* is widely misread as a collection of esoteric mysteries or operational platitudes. This is a failure of analysis. When stripped of its early 20th-century structuralism, the text reveals itself as the oldest surviving **operating manual for reality**.
 
 It describes not "truths" to be believed, but **distinctions** to be installed.
 
@@ -15,8 +15,8 @@ Most humans operate as *Reactive Humans*. They are passive observers of a realit
 The Seven Distinctions are the specifications for a new rendering engine. When installed, they shift the operator from the role of the *observed* to the role of the *author*. 
 
 ## 3. THE SEVEN DISTINCTIONS
-This manual reframes the Hermetic principles into a tactical stack:
-1. **The Rendering Layer** (Mentalism): The universe is a mental construction.
+This manual reframes the Architectural principles into a tactical stack:
+1. **The Rendering Layer** (Cognitive Rendering): The universe is a mental construction.
 2. **Fractal Architecture** (Correspondence): Patterns replicate across scale.
 3. **Frequency Dynamics** (Vibration): Nothing is static; state is a function of rate.
 4. **Spectrum Operations** (Polarity): Opposites are degrees of the same scale.

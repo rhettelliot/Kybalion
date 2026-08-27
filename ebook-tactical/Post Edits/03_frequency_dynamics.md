@@ -4,8 +4,6 @@
 **Threat Vector:** Frequency Collapse
 
 > "Nothing rests; everything moves; everything vibrates."
-> — *Archival Protocol: The Kybalion*
-
 ### 1. THE VIBRATIONAL SUBSTRATE: REALITY AS MOTION
 The fundamental error of the static mind is the perception of "solidity." The Reactive Human views a crisis as a wall, a failure as a concrete fact, and a mental state as a permanent condition. This is a sensory illusion created by a low-resolution renderer.
 

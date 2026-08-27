@@ -4,8 +4,6 @@
 **Threat Vector:** Polarity Entrapment
 
 > "Everything is Dual; everything has poles... every truth has two poles."
-> — *Archival Protocol: The Kybalion*
-
 ### 1. THE POLE ARCHITECTURE: THE ILLUSION OF OPPOSITES
 The primary failure of the Reactive Human is the belief in absolute opposites. They see "hot" and "cold" as two different things. They see "love" and "hate" as opposing forces. They see "fear" and "courage" as different substances.
 

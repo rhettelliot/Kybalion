@@ -4,14 +4,12 @@
 **Threat Vector:** Monopolar Sterility / Formless Chaos
 
 > "Gender is not sex. It is the presence of two complementary creative principles in all things—the projective and the receptive."
-> — *Archival Protocol: The Kybalion*
-
 ### 1. THE DUAL GENERATORS: FUNCTION OVER BIOLOGY
 
 The terminal error of the uncalibrated mind is the conflation of *Gender* with biological sex. In an operational context, Gender describes the fundamental mechanics of creation. Every act of generation—whether it is the writing of a codebase, the execution of a strategic pivot, or the sculpting of a physical object—requires the synthesis of two distinct creative functions.
 
 **A. THE DIRECTIVE (PROJECTIVE) PRINCIPLE**
-The Directive principle is the vector of initiation. It is the will that penetrates the void to establish a point of origin. 
+The Directive principle is the vector of initialization. It is the will that penetrates the void to establish a point of origin. 
 - **Operational Characteristics:** Will, structure, decision, penetration, commitment, boundary-setting, definition.
 - **Primary Action:** To project. To carve. To decide.
 - **System Role:** It provides the *skeleton*. Without it, there is no direction; there is only potential without a path.
@@ -68,7 +66,7 @@ At any given moment, ask: *Which principle is currently dominating my processor?
 
 #### B. Project Diagnostics
 Is the project failing?
-- **Failure by Sterility:** The project is "perfect」 on paper but lacks a soul or a user base. **Diagnosis:** Directive dominance. **Correction:** Introduce Receptive elements (user testing, organic iteration, atmospheric refinement).
+- **Failure by Sterility:** The project is "perfect」 on paper but lacks a core identity or a user base. **Diagnosis:** Directive dominance. **Correction:** Introduce Receptive elements (user testing, organic iteration, atmospheric refinement).
 - **Failure by Chaos:** The project has great energy and ideas but consists of 50 different half-finished directions. **Diagnosis:** Receptive dominance. **Correction:** Introduce Directive elements (hard deadlines, strict scope-cutting, a singular command intent).
 
 #### C. The Integrative Stack
@@ -114,7 +112,7 @@ The installation is complete.
 
 The seven distinctions are not a list of philosophical insights; they are a set of operational modules.
 
-1. **The Rendering Layer** (Mentalism) → Control of the Interface.
+1. **The Rendering Layer** (Cognitive Rendering) → Control of the Interface.
 2. **Fractal Architecture** (Correspondence) → Scaling of the Pattern.
 3. **Frequency Dynamics** (Vibration) → Modulation of the State.
 4. **The Polar Pivot** (Polarity) → Mastery of the Opposite.

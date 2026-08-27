@@ -1,17 +1,15 @@
 # DISTINCTION 01: THE RENDERING LAYER
-**Principle Source:** Mentalism (The All is Mind)
+**Principle Source:** Cognitive Rendering (The Substrate is Mind)
 **Operational Class:** Ontological Architecture
 **Threat Vector:** Unexamined Rendering
 
-> "The All is Mind; The Universe is Mental." 
-> — *Archival Protocol: The Kybalion*
-
+> "The Substrate is Mind; The Universe is Mental." 
 ### 1. THE SUBSTRATE: REALITY AS DATA
 The primary error of the Reactive Human is the belief in "matter." They perceive the world as a collection of hard, independent objects. In reality, matter is merely the lowest-frequency expression of a mental process.
 
 The substrate of the universe is not carbon, silicon, or vacuum; it is **Mind**. 
 
-For the Sovereign Operator, this is not a mystical claim, but a functional specification. If the universe is mental, then reality is not a "thing" you inhabit, but a **rendering** produced by a specific set of operating conditions. Your nervous system is not a mirror reflecting a pre-existing world; it is the **generative AI on meat** that renders a world based on its current calibration.
+For the Sovereign Operator, this is not a structural claim, but a functional specification. If the universe is mental, then reality is not a "thing" you inhabit, but a **rendering** produced by a specific set of operating conditions. Your nervous system is not a mirror reflecting a pre-existing world; it is the **generative AI on meat** that renders a world based on its current calibration.
 
 ### 2. THE RENDERING ENGINE: THE BIOLOGICAL INTERFACE
 Your brain does not "see" the world. It receives chaotic electrical signals and renders a coherent simulation that allows for survival. This is the **Rendering Layer**.
@@ -34,7 +32,7 @@ If the substrate is Mind, then the most direct way to change a result is to chan
 Average existence is the result of a default rendering setting. The "standard" human life—characterized by chronic stress, predictable cycles of failure, and a lack of agency—is simply the result of running the factory-settings renderer. To be mediocre is to be an unexamined render.
 
 #### B. Persistence via the Vault
-Mentalism operationalized requires **persistence**. The act of writing, the creation of "The Vault," and the rigorous documentation of one's own cognitive architecture are not merely habits; they are the act of "hard-coding" a new reality. By externalizing the render into a structured system, the operator creates a permanent anchor that prevents the renderer from slipping back into default-reactive mode.
+Cognitive Rendering operationalized requires **persistence**. The act of writing, the creation of "The Vault," and the rigorous documentation of one's own cognitive architecture are not merely habits; they are the act of "hard-coding" a new reality. By externalizing the render into a structured system, the operator creates a permanent anchor that prevents the renderer from slipping back into default-reactive mode.
 
 #### C. The Volitional Anchor
 Sovereignty is the ability to maintain a specific rendering state regardless of incoming signal noise. When the environment screams "crisis," the Sovereign Operator maintains the render of "order." This is not denial; it is the intentional application of a higher-order mental structure over a lower-order sensory input.

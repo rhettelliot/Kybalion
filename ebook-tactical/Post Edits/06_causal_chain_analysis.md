@@ -4,8 +4,6 @@
 **Threat Vector:** The Illusion of Chance
 
 > "Every Cause has its Effect; every Effect has its Cause; everything happens according to Law; chance is but a name for Law not recognized."
-> — *Archival Protocol: The Kybalion*
-
 ### 1. THE DETERMINISTIC SUBSTRATE: THE END OF CHANCE
 The Reactive Human lives in a world of "accidents," "luck," and "fate." When a project fails, they cite "bad timing." When a relationship collapses, they call it "unfortunate." This is a state of **Resolution Failure**.
 
@@ -41,7 +39,7 @@ The highest level of operational mastery is not merely intercepting existing cha
 **Prime Cause Logic:**
 Instead of reacting to a world that happens *to* them, the Sovereign Operator decides which "Effect" is required in the future and then reverse-engineers the necessary "Causes" to produce it.
 
-This is the deep application of **Mentalism**. If the substrate is Mind, then the most potent tool is the ability to seed the causal chain with intentionality.
+This is the deep application of **Cognitive Rendering**. If the substrate is Mind, then the most potent tool is the ability to seed the causal chain with intentionality.
 
 **The Authorship Process:**
 - **Desired Effect → Required Immediate Cause → Required Root Cause → Current Action.**

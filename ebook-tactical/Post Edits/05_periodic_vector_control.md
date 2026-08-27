@@ -4,8 +4,6 @@
 **Threat Vector:** Rhythmic Entrainment
 
 > "Everything flows, and everything has a rhythm. Everything surges and then recedes; the swing of the pendulum to the right is followed by the swing of the pendulum to the left."
-> — *Archival Protocol: The Kybalion*
-
 ### 1. THE PENDULUM ARCHITECTURE: THE LAW OF OSCILLATION
 The primary failure of the Reactive Human is the belief in linear progress. They operate under the delusion that a "peak" can be maintained indefinitely—that a winning streak, a high-energy state, or a market boom is a new permanent baseline.
 
